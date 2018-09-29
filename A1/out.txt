@@ -1,0 +1,34 @@
+Linear Recursion - fastOddanaci method:
+Term 5: 5
+Term 10: 105
+Term 15: 2209
+Term 20: 46499
+Term 25: 978793
+Term 30: 20603361
+Term 35: 433695873
+Term 40: 539260895
+Term 45: -1106123859
+Term 50: -780807791
+Term 55: 216042609
+Term 60: -1645004157
+Term 65: -750114111
+Term 70: -1488695
+Term 75: 1868586433
+Term 80: -165993377
+Term 85: -1618763179
+Term 90: 2068304665
+Term 95: -1300031551
+Term 100: -1081317309
+Time elapsed: 0 second(s).
+
+Non-linear Recursion - slowOddanaci method:
+Term 5: 5
+Term 10: 105
+Term 15: 2209
+Term 20: 46499
+Term 25: 978793
+Term 30: 20603361
+Term 35: 433695873
+Term 40: 539260895
+
+Time elapsed: 23 second(s).

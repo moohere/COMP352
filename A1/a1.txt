@@ -1,0 +1,65 @@
+a) In class, we’ve looked at two approaches for the regular Fibonacci number calculations. So, I’ve decided to apply the same two approaches for the 
+Oddonacci calculator as well. 
+
+	i) The first approach is a simple clearcut recursive method to calculate the Oddonaci numbers:
+		Algorithm slowOddonaci(n):
+			Input: Nonnegative integer n
+			Output: The nth Oddonaci Number Fn
+			if n <= 3 then
+				return 1
+			else
+				return slowOddonaci(n-1) + slowOddonaci(n-2) + slowOddonaci(n-3)
+	Unlike the regular Fibonacci calculator method, this method returns 1 as long as n is less than or equal to 3 (i.e. n =1, n=2, n=3). Furthermore,
+	if n is greater than 3, 
+	it returns the sum of the previous three numbers rather than the previous two.
+
+	ii) The second approach uses a helper method to calculate the Oddonaci numbers in a linear/tail recursive manner instead:
+		Algorithm fastOddonaci(n):
+			Input: Nonnegative integer n
+			Output: The nth Oddonaci Number Fn
+			if n <= 3 then
+				return 1
+			else
+				return helper(1, 1, 1, n-3)
+
+		Algorithm helper(first, second, third, term):
+			Input: Nonnegative integers first, second, third, and term
+			Output: The (term-1)th Oddonaci Number Fterm-1
+			if term <= 0 then
+				return third
+			else
+				return helper(second, third, first+second+third, term-1)
+	This method makes use of a helper function which in itself uses a linear recursion approach. To start, the fastOddonaci method returns 1 if the method is 
+	called on the first three terms. Otherwise, it calls the helper function instead. The helper method is where the linear recursion occurs. It essentially 
+	returns the third integer, which is the most recent term, if the helper function reaches the 3rd term or less. In other words, the recursive calls 	
+	will end once the recursion iterates down to the point where term <= 3. Otherwise, it will call itself but this time by shifting its value left by one. 
+	So, the second term is now the first, the third term is now the second, and 	the combination of the original 3 terms is now the third term 
+	(as per Oddonacci calculations). The integer term then is lowered by one so that the process repeats until the breaking case of term being <= 3. Eventually, the
+ 	integer third will be the value that we want, and is returned back to the original fastOddonaci method and returned as our answer. 
+
+Observations: 
+As expected, the time to run the tail recursion approach is virtually nothing at an average time of just under a second (shown as 0s in the text file). 
+However, the run the slower recursive approach for up to n = 40 actually took 20 seconds. I originally ran it for n=100, but after some research I quickly 
+learned that this would take thousands of years. Even n=50 would have taken far too long, and so I stuck with n=40 which was reasonable. This quick test 
+alone showed me how incredibly fast exponential runtime really grows.  
+
+b) The slowOddonaci method uses simple recursion, and so for each n that we move up, we must first find n-1, n-2, and n-3 thus needing to compute those as well. 
+Those numbers themselves are also calculated recursively, thus if we were to calculate, say, slowOddonaci(15), we’d need to compute slowOddonaci(14), 
+slowOddonaci(13), and slowOddonaci(13). Of course, each of those must then be calculated similar and the recursion tree grows in height each time. The 
+slow approach will have n levels in the recursion tree, but each level will have an 3^n leaves, thus it will grow exponentially fast at each level. 
+
+However, in the fastOddonaci method, we use a helper method that takes care of the recursion in a tail recursive approach. Each iteration actually returns 
+the recursive call itself, there are no further calculations after unlike the previous method which waits for the the different recursive calls to finish so 
+that it can add it all up. Thus, each call does the calculation once, and so if we need to find, again say, fastOddonaci(15), we only need to run n=15 times 
+to find the solution. Thus, we get a linear time complexity rather than the exponential time complexity of the previous approach. 
+
+In this manner, the tail recursion never waits for n-1, n-2, and n-3 calculations to finish before adding them up and returning the final value. Instead, it 
+will calculate n-1 on its own, then n-2, then n-3, then finally we can find n by adding those up. This gets rid of the need to constantly run each leaves in 
+the recursion tree to get the value and it saves us a ton of time.
+
+c) Yes, the fastOddonaci method uses tail recursion. The tail recursion function simply computes what is needed and returns the recursive function itself rather 
+than having to wait for the multiple calls to occur so that it can add it all up as in the slowOddonaci method. Thus, the tail recursion ends up being far more 
+efficient having a linear time complexity compared to the exponential time complexity of the previous method, as aforementioned. 
+
+
+		
