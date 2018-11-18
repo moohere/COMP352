@@ -1,0 +1,156 @@
+N is :10
+
+MyArrayList:  Insert@Start(ms) Insert@end (ms)  Insert@random (ms)
+                   0              0                   0
+Remove@start(ms)  Remove@end(ms)   Remove@random(ms)  Remove byvalue (ms)
+0                        0                   0                   1
+
+ArrayList:  Insert@Start(ms) Insert@end (ms)  Insert@random (ms)
+                   0              0                   0
+Remove@start(ms)  Remove@end(ms)   Remove@random(ms)  Remove byvalue (ms)
+0                        0                   0                   0
+
+
+MyLinkedList:  Insert@Start(ms) Insert@end (ms)  Insert@random (ms)
+                   1              0                   0
+Remove@start(ms)  Remove@end(ms)   Remove@random(ms)  Remove byvalue (ms)
+0                        0                   0                   0
+
+
+LinkedList:  Insert@Start(ms) Insert@end (ms)  Insert@random (ms)
+                   0              0                   0
+Remove@start(ms)  Remove@end(ms)   Remove@random(ms)  Remove byvalue (ms)
+0                        0                   0                   0
+
+------------------------------------------------------------------------------------------------
+
+N is :100
+
+MyArrayList:  Insert@Start(ms) Insert@end (ms)  Insert@random (ms)
+                   1              0                   0
+Remove@start(ms)  Remove@end(ms)   Remove@random(ms)  Remove byvalue (ms)
+0                        0                   2                   6
+
+ArrayList:  Insert@Start(ms) Insert@end (ms)  Insert@random (ms)
+                   1              0                   0
+Remove@start(ms)  Remove@end(ms)   Remove@random(ms)  Remove byvalue (ms)
+0                        0                   0                   1
+
+
+MyLinkedList:  Insert@Start(ms) Insert@end (ms)  Insert@random (ms)
+                   0              0                   0
+Remove@start(ms)  Remove@end(ms)   Remove@random(ms)  Remove byvalue (ms)
+0                        0                   0                   2
+
+
+LinkedList:  Insert@Start(ms) Insert@end (ms)  Insert@random (ms)
+                   0              0                   1
+Remove@start(ms)  Remove@end(ms)   Remove@random(ms)  Remove byvalue (ms)
+0                        0                   0                   1
+
+------------------------------------------------------------------------------------------------
+
+N is :1000
+
+MyArrayList:  Insert@Start(ms) Insert@end (ms)  Insert@random (ms)
+                   4              0                   7
+Remove@start(ms)  Remove@end(ms)   Remove@random(ms)  Remove byvalue (ms)
+0                        0                  17                  69
+
+ArrayList:  Insert@Start(ms) Insert@end (ms)  Insert@random (ms)
+                   1              0                   1
+Remove@start(ms)  Remove@end(ms)   Remove@random(ms)  Remove byvalue (ms)
+0                        0                   1                  10
+
+
+MyLinkedList:  Insert@Start(ms) Insert@end (ms)  Insert@random (ms)
+                   0              0                   3
+Remove@start(ms)  Remove@end(ms)   Remove@random(ms)  Remove byvalue (ms)
+0                        0                   4                  14
+
+
+LinkedList:  Insert@Start(ms) Insert@end (ms)  Insert@random (ms)
+                   1              0                   3
+Remove@start(ms)  Remove@end(ms)   Remove@random(ms)  Remove byvalue (ms)
+0                        0                   2                  13
+
+------------------------------------------------------------------------------------------------
+
+N is :10000
+
+MyArrayList:  Insert@Start(ms) Insert@end (ms)  Insert@random (ms)
+                  67              1                 259
+Remove@start(ms)  Remove@end(ms)   Remove@random(ms)  Remove byvalue (ms)
+0                        0                 472                4323
+
+ArrayList:  Insert@Start(ms) Insert@end (ms)  Insert@random (ms)
+                   5              1                  22
+Remove@start(ms)  Remove@end(ms)   Remove@random(ms)  Remove byvalue (ms)
+0                        0                  20                 194
+
+
+MyLinkedList:  Insert@Start(ms) Insert@end (ms)  Insert@random (ms)
+                   0              1            Too long
+Remove@start(ms)  Remove@end(ms)   Remove@random(ms)  Remove byvalue (ms)
+0                        0                 218                 524
+
+
+LinkedList:  Insert@Start(ms) Insert@end (ms)  Insert@random (ms)
+                   1              1                 252
+Remove@start(ms)  Remove@end(ms)   Remove@random(ms)  Remove byvalue (ms)
+0                        0                 389                1069
+
+------------------------------------------------------------------------------------------------
+
+N is :100000
+
+MyArrayList:  Insert@Start(ms) Insert@end (ms)  Insert@random (ms)
+                5580              6            Too long
+Remove@start(ms)  Remove@end(ms)   Remove@random(ms)  Remove byvalue (ms)
+0                        1            Too long             Too long
+
+ArrayList:  Insert@Start(ms) Insert@end (ms)  Insert@random (ms)
+                 549              4            Too long
+Remove@start(ms)  Remove@end(ms)   Remove@random(ms)  Remove byvalue (ms)
+0                        0            Too long             Too long
+
+
+MyLinkedList:  Insert@Start(ms) Insert@end (ms)  Insert@random (ms)
+                   4              3            Too long
+Remove@start(ms)  Remove@end(ms)   Remove@random(ms)  Remove byvalue (ms)
+0                        0            Too long             Too long
+
+
+LinkedList:  Insert@Start(ms) Insert@end (ms)  Insert@random (ms)
+                   6              3            Too long
+Remove@start(ms)  Remove@end(ms)   Remove@random(ms)  Remove byvalue (ms)
+0                        0            Too long             Too long
+
+------------------------------------------------------------------------------------------------
+
+N is :1000000
+
+MyArrayList:  Insert@Start(ms) Insert@end (ms)  Insert@random (ms)
+                 Too Long             17            Too long
+Remove@start(ms)  Remove@end(ms)   Remove@random(ms)  Remove byvalue (ms)
+2                        1            Too long             Too long
+
+ArrayList:  Insert@Start(ms) Insert@end (ms)  Insert@random (ms)
+                 Too Long             44            Too long
+Remove@start(ms)  Remove@end(ms)   Remove@random(ms)  Remove byvalue (ms)
+0                        0            Too long             Too long
+
+
+MyLinkedList:  Insert@Start(ms) Insert@end (ms)  Insert@random (ms)
+                 124             25            Too long
+Remove@start(ms)  Remove@end(ms)   Remove@random(ms)  Remove byvalue (ms)
+1                        0            Too long             Too long
+
+
+LinkedList:  Insert@Start(ms) Insert@end (ms)  Insert@random (ms)
+                1513             18            Too long
+Remove@start(ms)  Remove@end(ms)   Remove@random(ms)  Remove byvalue (ms)
+0                        0            Too long             Too long
+
+------------------------------------------------------------------------------------------------
+
